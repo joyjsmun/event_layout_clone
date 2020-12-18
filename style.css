@@ -23,10 +23,10 @@ body {
 
 .content1 {
     width: 95%;
-    height:95%;
+    height:96%;
     background-color: #FF7400;
     display: grid;
-    grid-template-columns: 0.3fr 6fr 2fr;
+    grid-template-columns: 0.4fr 6.5fr 2fr;
     grid-template-rows: repeat(6,2fr);
     align-items: center;
      border: 0.15rem solid red; 
@@ -42,6 +42,7 @@ body {
     height: 101%;
     border-left: 0.15rem solid red; 
     border-bottom: 0.15rem solid red; 
+    justi
     
 
 }
@@ -54,6 +55,10 @@ body {
     border-right: 0.15rem solid red; 
     height: 99%;
 }
+
+/* .content1__item:last-child{
+    border-bottom: none;
+} */
 
 .content1__item_s{
     height:94%;
@@ -69,21 +74,64 @@ body {
 .nav{
     width:3%;
     height:100%;
+    font-size:1.5rem;
 }
 
 .nav__1{
-    background-color: pink;
+    width: 100%;
     height:50%;
-
+    background-color: #a537fd;
+    writing-mode: tb-rl;
+    padding-right:50%;
+    padding-top:20px
+    
 }
 
 .nav__2{
     background-color: blue;
+    width: 100%;
     height:50%;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    padding-top:20px
 }
 
 .content2{
     padding:10px;
     width:30%;
     background-color: red;
+}
+
+.content2__nav ul{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    height:30px;
+}
+
+
+.content2__item{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6,1fr);
+    height:100%;
+    column-gap: 15px;
+    row-gap:15px;
+}
+
+.content2__item__sub{
+    border-bottom: 0.15rem solid;
+
+}
+.content2__item__sub:nth-child(1),
+.content2__item__sub:nth-child(2){
+    border-top:0.15rem solid;
+}
+
+
+
+.content2__item__sub:last-child,
+.content2__item__sub:nth-child(11)
+{
+    border-bottom: none;
 }
